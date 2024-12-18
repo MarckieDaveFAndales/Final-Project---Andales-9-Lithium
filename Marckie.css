@@ -4,7 +4,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333; 
+    color: white;
 }
 
 @keyframes backgroundAnimation {
@@ -13,11 +13,26 @@ body {
     100% { background-position: 0% 50%; }
 }
 
+:visited{
+    color: gray;
+}
+
 .topnav {
     background-color:#00796b, #00aaff;
     overflow: hidden;
   }
   
+  img:hover.rigger {
+    transform: scale(4,4);
+    transition-duration: 4000s;
+    transform: rotate(-20160000deg)
+
+  }
+
+.rigger:hover audio {
+      display: block;
+    }
+	
   .topnav a {
     float: left;
     color: #f2f2f2;
@@ -30,7 +45,8 @@ body {
   .topnav a:hover {
     background-color: #00796b, #00aaff;
     color: #00796b, #00aaff;
-    transform: scale(1.5); 
+    transform: scale(1.4); 
+    transition-duration: 1s;
   }
 
   .topnav a.active {
@@ -51,8 +67,42 @@ body {
     left: 0;
     z-index: 900; 
 }
+.aside{
+	float-left
+}
+ .sprite{
+        background: url('Image/instagramsprite.png') no-repeat 0 0;
+        width: 274px;
+        height: 233px;
+        transition: transform 0.3s ease; 
+    }
 
+    .sprite:hover {
+        transform: scale(0,1); 
+        transform-origin: center center;
+    }
+    .sprite-link {
+        display: inline-block; 
+        text-decoration: none; 
+    }
+	
+	.sprite1{
+        background: url('Image/facebooksprite.png') no-repeat 0 0;
+        width: 295px;
+        height: 280px;
+        transition: transform 0.3s ease; 
+    }
+   
+    .sprite1:hover {
+        transform: scale(0,1); 
+        transform-origin: center center; 
+    }
 
+  
+    .sprite1-link{
+        display: inline-block; 
+        text-decoration: none; 
+    }
 .logo {
     width: 60px; 
     height: 60px; 
@@ -93,6 +143,7 @@ main {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+	position: relative;
 }
 
 .article-content {
@@ -103,16 +154,29 @@ main {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+	position: relative;
 }
 
+	input:focus {
+  background-color: blue;
+}
+.aside-content{
+    left: 12px;
+}
 .text-content {
     flex: 1;
     margin-right: 20px;
 }
-
+.rigger{
+    width: 300px;
+    margin-left:200px
+	background-size: 10px 20px;
+}
 .top-left-image {
     width: 300px; 
     margin-right: 20px; 
+	cursor: pointer;
+    position: relative;
 }
 
 .top-right-image {
@@ -126,14 +190,20 @@ h2 {
 footer {
     text-align: center;
     padding: 10px;
-    background: #333; 
-    color: #ffffff; 
+    background-color: #ffffff; 
+    color: #000; 
 }
-
+a:active {
+  background-color: blue;
+}
 a {
     color: #FF5733; 
     text-decoration: underline; 
 }
+
+iframe {
+      display: none;
+    }
 
 a:hover {
     color: #FF0000; 
@@ -148,6 +218,9 @@ a:hover {
     }
 }
 
+a[target= "_blank"]{
+ background-color: #e0f7fa;
+}
 body {
     background: linear-gradient(to right, #007BFF, #E0F7FA);
     background-size: 200% 200%;
