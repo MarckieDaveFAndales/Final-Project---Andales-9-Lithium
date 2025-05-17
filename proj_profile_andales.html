@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Equality Now</title>
+  <link rel="stylesheet" href="marckie.css">
+</head>
+<body>
+  <header>
+    <div class="topnav">
+      <a href="home.html">Home</a>
+      <a href="News and Information.html">News & Information</a>
+      <a class="active" href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="proj_signup_andales.html">Sign Up Here!</a>
+      <a href="proj_profile_andales.html">Profile</a>
+    </div>
+    <h1>Welcome to Equality Now</h1>
+  </header>
+
+  <section class="profile-container">
+    <p><strong>First Name:</strong> <span id="displayFirstName"></span></p>
+    <p><strong>Last Name:</strong> <span id="displayLastName"></span></p>
+    <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+    <p><strong>Sex:</strong> <span id="displaySex"></span></p>
+    <p><strong>Why I support this campaign:</strong></p>
+    <p id="displayReason"></p>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("displayFirstName").textContent = localStorage.getItem("firstName");
+      document.getElementById("displayLastName").textContent = localStorage.getItem("lastName");
+      document.getElementById("displayEmail").textContent = localStorage.getItem("email");
+      document.getElementById("displaySex").textContent = localStorage.getItem("sex");
+      document.getElementById("displayReason").textContent = localStorage.getItem("reason");
+    });
+  </script>
+</body>
+</html>
+

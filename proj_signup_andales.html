@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Equality Now - Sign Up</title>
+  <link rel="stylesheet" href="marckie.css">
+</head>
+<body>
+  <header>
+    <div class="topnav">
+      <a href="home.html">Home</a>
+      <a href="News and Information.html">News & Information</a>
+      <a class="active" href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="proj_signup_andales.html">Sign Up Here!</a>
+      <a href="proj_profile_andales.html">Profile</a>
+    </div>
+    <img src="Image/Logo.jpg" alt="Gender Equality Logo" class="logo">
+    <h1>Equality Now</h1>
+    <p class="tagline">Empowering Every Gender. Building Equal Futures.</p>
+  </header>
+
+  <section class="form-section">
+    <form id="signupForm">
+
+      <label>
+        First Name*
+        <input type="text" id="firstName">
+        <span class="error"></span>
+      </label>
+
+      <label>
+        Last Name*
+        <input type="text" id="lastName">
+        <span class="error"></span>
+      </label>
+
+      <label>
+        Sex*<br>
+        <input type="radio" name="sex" value="Male"> Male
+        <input type="radio" name="sex" value="Female"> Female
+        <input type="radio" name="sex" value="Prefer not to say"> Prefer not to say
+        <br><span class="error" id="sexError"></span>
+      </label>
+
+      <label>
+        Email* 
+        <input type="email" id="email">
+        <span class="error"></span>
+      </label>
+
+      <label>
+        Password* 
+        <input type="password" id="password">
+        <span class="error"></span>
+      </label>
+
+      <label>
+        Contact Number 
+        <input type="text" id="contact">
+      </label>
+
+      <label>
+        Why you're supporting our campaign* 
+        <textarea id="supportReason"></textarea>
+        <span class="error"></span>
+      </label>
+
+      <button type="submit">Join the Movement</button>
+    </form>
+  </section>
+
+  <script src="form.js"></script>
+</body>
+</html>
+
+
