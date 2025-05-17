@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     color: white;
+	display: flex;
 }
 
 #quiz-box {
@@ -147,7 +148,96 @@ body {
     background-color:#00796b, #00aaff;
     overflow: hidden;
   }
-  
+  .tagline {
+  font-style: italic;
+  font-size: 1.2em;
+}
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px; /* pushes the form lower */
+  padding-bottom: 40px;
+  min-height: calc(100vh - 550px); /* adjust based on header height */
+  background: linear-gradient(to right, #b3e5fc, #e1f5fe); /* optional */
+}
+
+form {
+  background-color: white;
+  padding: 2em;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.3em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+ .profile-container {
+      max-width: 600px;
+      margin: 100px auto; /* centers and pushes content down */
+      background-color: white;
+      padding: 2em;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .profile-container p {
+      margin-bottom: 1em;
+      font-size: 1.1em;
+    }
+
+input[type="radio"] {
+  width: auto;
+  margin: 0 5px 0 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  padding: 0.8em 1.5em;
+  margin-top: 1.5em;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4a148c;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  display: block;
+  margin-top: 0.2em;
+}
+
   img:hover.rigger {
     transform: scale(4,4);
     transition-duration: 4000s;
